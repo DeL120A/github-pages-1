@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Facebook - Página de Inicio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9eff1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado principal */
+        header {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Formulario de inicio de sesión */
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+        }
+
+        .login-form h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #3b5998;
+            text-align: center;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+
+        .login-form .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Feed de Noticias */
+        .news-feed {
+            width: 100%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .post .user-name {
+            font-weight: bold;
+            font-size: 18px;
+            color: #3b5998;
+        }
+
+        .post .content {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Mi Facebook</h1>
+    </header>
+
+    <!-- Formulario de inicio de sesión -->
+    <section class="login-form">
+        <h2>Iniciar sesión</h2>
+        <form action="#">
+            <input type="text" placeholder="Correo electrónico o teléfono" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <p class="forgot-password"><a href="#">¿Olvidaste tu contraseña?</a></p>
+    </section>
+
+    <!-- Feed de Noticias -->
+    <section class="news-feed">
+        <div class="post">
+            <div class="user-name">Juan Pérez</div>
+            <div class="content">¡Hola, estoy usando Facebook por primera vez!</div>
+        </div>
+
+        <div class="post">
+            <div class="user-name">María García</div>
+            <div class="content">¡Qué divertido día! Acabo de volver de unas vacaciones increíbles.</div>
+        </div>
+
+        <div class="post">
+            <div class="user-name">Carlos López</div>
+            <div class="content">¿Alguien tiene recomendaciones de películas para ver este fin de semana?</div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Mi Facebook - Hecho con ❤️</p>
+    </footer>
+
+</body>
+</html>

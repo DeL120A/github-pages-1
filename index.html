@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Facebook Simplificado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        .news-feed {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .post .user-name {
+            font-weight: bold;
+        }
+        .post .content {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Facebook</h1>
+    </header>
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form>
+            <input type="text" placeholder="Correo electrónico o número de teléfono" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+    </div>
+
+    <!-- Feed de Noticias -->
+    <div class="news-feed">
+        <h2>Noticias</h2>
+
+        <!-- Primer post -->
+        <div class="post">
+            <div class="user-name">Juan Pérez</div>
+            <div class="content">¡Hola, estoy usando Facebook!</div>
+        </div>
+
+        <!-- Segundo post -->
+        <div class="post">
+            <div class="user-name">María García</div>
+            <div class="content">Acabo de publicar mi primer foto.</div>
+        </div>
+
+        <!-- Tercer post -->
+        <div class="post">
+            <div class="user-name">Carlos López</div>
+            <div class="content">¿Alguien tiene recomendaciones de películas para este fin de semana?</div>
+        </div>
+</body>
+</html>
